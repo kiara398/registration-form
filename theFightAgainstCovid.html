@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tulumbe Covid</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        
+        <h1 id="title">PASSENGER REGISTRATION</h1>
+      </header>
+
+      <div id="form-wrapper">
+        <form action="" id="register-form">
+          <input
+            type="text"
+            name="fullName"
+            id="fullname"
+            class="form-control-2"
+            placeholder="Fullname"
+          />
+          <br />
+          <br />
+          <input
+            type="date"
+            name="today"
+            id="date"
+            class="form-control-2"
+            placeholder="date"
+          />
+          <br />
+          <br />
+          <div class="container2">
+            <select name="select gender" id="dropdown">
+              <option value="select your Gender">Select your Gender?</option>
+              >
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+            <br />
+            <br />
+            <select name="vaccination" id="dropdown2">
+              <option value="Vaccination status">Vaccination status</option>
+              >
+              <option value="vaccinated">Vaccinated</option>
+              <option value="not vaccinated">Not vaccinated</option>
+            </select>
+            <br />
+            <br />
+        </div>
+<div class="container3">
+            <input
+              type="number"
+              name="NIN"
+              id="nin"
+              class="form-control-2"
+              placeholder="NIN"
+            />
+            <br />
+            <br />
+            <input
+              type="number"
+              name="temperature"
+              id="temp"
+              class="form-control-2 form-float"
+              placeholder="temp.(degrees)"
+            />
+            <br />
+            <br />
+          </div>
+          <input
+            type="text"
+            name="pickup"
+            id="pickup"
+            class="form-control-2 form-float"
+            placeholder="Picked from"
+          />
+          <br />
+          <br />
+          <input
+            type="text"
+            name="destination"
+            id="destination"
+            class="form-control-2"
+            placeholder="Destination"
+          />
+
+          <p class="null-field"></p>
+
+          <button id="submit" type="button" onclick="checkNullField()">
+            Register
+          </button>
+        </form>
+      </div>
+      <p class="copyright">
+        &#169; Proudly brought to you by the Dream-Team. Any infringement of copyrights is punishable by law!
+
+      </p>
+
+      <script src="register.js"></script>
+    </div>
+  </body>
+</html>
