@@ -14,7 +14,7 @@ var checkNullField = () => {
     
     let nullField = document.querySelector('.null-field')
 
-    if(fullName.value == "" || fullName.value.length>8){
+    if(fullName.value == "" || fullName.value.length<8){
         fullName.style.border = "2px solid red";
         
     } else{
