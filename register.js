@@ -1,7 +1,7 @@
 //Access Form via Element ID
 
 
-var checkNullField = () => { 
+// var checkNullField = () => { 
     let fullName = document.getElementById('fullname');
     let date = document.getElementById('date');
     let dropDownGender = document.getElementById('dropdown');
@@ -13,20 +13,24 @@ var checkNullField = () => {
     let errornin = document.getElementById('errorNIN')
     
     let nullField = document.querySelector('.null-field')
-
-    if(fullName.value == "" || fullName.value.length<8){
-        fullName.style.border = "2px solid red";
-        
-    } else{
-        fullName.style.border = "2px solid green";
-    }
-
-    if  (date.value == ""){
-        date.style.border = "2px solid red"; 
-    }else{
-        date.style.border = "2px solid green"; 
-    }
-
+    
+    fullName.addEventListener('input',checkNameField = ()=>{
+        if(fullName.value == "" || fullName.value.length<8){
+            fullName.style.border = "2px solid red";
+            
+        } else{
+            fullName.style.border = "2px solid green";
+        }
+    
+     })
+     date.addEventListener('input', checkDate = ()=>{
+        if  (date.value == ""){
+            date.style.border = "2px solid red"; 
+        }else{
+            date.style.border = "2px solid green"; 
+        }
+     })
+    
     if(dropDownGender.value == "select your Gender") {
         dropDownGender.style.border = "2px solid red";
     }else{
@@ -68,4 +72,4 @@ var checkNullField = () => {
     
 
     
-}
+// }
